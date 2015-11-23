@@ -54,7 +54,7 @@ public class LoginController {
     
     @RequestMapping(value = {"/user"},method = RequestMethod.GET)
     public String user(ModelMap model) {
-        model.addAttribute("user", pegaUsuario());
+        model.addAttribute("usuario", pegaUsuario());
         return "user";
     }
     
